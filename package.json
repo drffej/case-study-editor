@@ -7,13 +7,13 @@
 	"icon": "media/dep.png",
 	"license": "SEE LICENSE",
 	"bugs": {
-		"url": "http://gitlab.wadatsumi.dat.css.fujitsu.com/cloud-service-azure/case-study-editor/-/issues",
+		"url": "https://github.com/drffej/case-study-editor/issues",
 		"email": "jeff.parker@fujitsu.com"
 	},
-	"homepage": "http://gitlab.wadatsumi.dat.css.fujitsu.com/cloud-service-azure/case-study-editor/-/blob/master/README.md",
+	"homepage": "https://github.com/drffej/case-study-editor/README.md",
 	"repository": {
 		"type": "git",
-		"url": "http://gitlab.wadatsumi.dat.css.fujitsu.com/cloud-service-azure/case-study-editor.git"
+		"url": "https://github.com/drffej/case-study-editor.git"
 	},
 	"engines": {
 		"vscode": "^1.52.0"

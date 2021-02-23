@@ -8,7 +8,7 @@ Download the `.vsix` file and install via the command - `code --install-extensio
 
 ## Usage 
 
-Click on the Case Study editor icon ![](media/dep.svg) and load the `Case Study.json` file.
+Click on the Case Study editor icon ![](http://gitlab.wadatsumi.dat.css.fujitsu.com/cloud-service-azure/case-study-editor/-/blob/master/media/dep.svg) and load the `Case Study.json` file.
 
 ## Release Notes
 
