@@ -1,0 +1,64 @@
+body {
+	background-color: transparent;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 0px;
+    border: 1px solid #ccc;
+
+}
+
+.container {
+	padding: 10px;
+}
+
+.column-edge {
+	float: left;
+	width: 40%;
+}
+
+.column-middle {
+	display: flex;
+    justify-content: center;
+    float: left;
+    align-items: center;
+	width: 20%;
+	padding-top: 5%;
+	display: grid;
+}
+
+
+  
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+    --padding-x: 1.2em;
+ }

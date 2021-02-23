@@ -1,0 +1,152 @@
+{
+	"name": "case-study-editor",
+	"displayName": "Case Study Editor",
+	"description": "Editor for Fujitsu Case Studies",
+	"version": "1.0.0",
+	"publisher": "Archlight",
+	"icon": "media/dep.png",
+	"license": "SEE LICENSE",
+	"bugs": {
+		"url": "http://gitlab.wadatsumi.dat.css.fujitsu.com/cloud-service-azure/case-study-editor/-/issues",
+		"email": "jeff.parker@fujitsu.com"
+	},
+	"homepage": "http://gitlab.wadatsumi.dat.css.fujitsu.com/cloud-service-azure/case-study-editor/-/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "http://gitlab.wadatsumi.dat.css.fujitsu.com/cloud-service-azure/case-study-editor.git"
+	},
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onView:caseStudyExplorer"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"viewsWelcome": [
+			{
+			  "view": "caseStudyExplorer",
+			  "contents": "No Case Studies Loaded.\n[Open Case Study File](command:caseStudyExplorer.loadCaseStudies)"
+			}
+		  ],
+		"commands": [
+		
+			{
+                "command": "caseStudyExplorer.refreshEntry",
+                "title": "Refresh",
+                "icon": {
+                    "light": "resources/light/refresh.svg",
+                    "dark": "resources/dark/refresh.svg"
+                }
+			},
+			{
+                "command": "caseStudyExplorer.loadCaseStudies",
+                "title": "Open File ...",
+                "icon": {
+                    "light": "resources/light/folder.svg",
+                    "dark": "resources/dark/folder.svg"
+                }
+			},
+			{
+				"command": "caseStudyExplorer.addEntry",
+				"title": "New Case Study ..",
+				"icon": {
+					"light": "resources/light/new-file.svg",
+					"dark": "resources/dark/new-file.svg"
+				}
+			},
+			{
+				"command": "caseStudyExplorer.editEntry",
+				"title": "Edit",
+				"icon": {
+					"light": "resources/light/edit.svg",
+					"dark": "resources/dark/edit.svg"
+				}
+			},
+			{
+				"command": "caseStudyExplorer.deleteEntry",
+				"title": "Delete Case Study"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				
+			],
+			"view/title": [
+				{
+					"command": "caseStudyExplorer.refreshEntry",
+					"when": "view == caseStudyExplorer",
+					"group": "navigation"
+				},
+				{
+					"command": "caseStudyExplorer.addEntry",
+					"when": "view == caseStudyExplorer",
+					"group" : "navigation"
+				},
+				{
+					"command": "caseStudyExplorer.loadCaseStudies",
+					"when": "view == caseStudyExplorer",
+					"group" : "navigation"
+				}
+
+			],
+			"view/item/context": [
+				{
+					"command": "caseStudyExplorer.editEntry",
+					"when": "view == caseStudyExplorer && viewItem == casestudy",
+					"group": "inline"
+				},
+				{
+					"command": "caseStudyExplorer.deleteEntry",
+					"when": "view == caseStudyExplorer && viewItem == casestudy"
+				}
+			
+			]
+		},
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "case-study-explorer",
+					"title": "Case Study Editor",
+					"icon": "media/dep.svg",
+					"contextualTitle": "Case Study Editor"
+				}
+			]
+		},
+		"views": {
+			"case-study-explorer": [
+				{
+					"id": "caseStudyExplorer",
+					"name": "Case Study Editor",
+					"icon": "media/dep.svg",
+					"contextualTitle": "Case Study Editor"
+				}
+			]
+			
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.1",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.52.0",
+		"eslint": "^6.8.0",
+		"@typescript-eslint/parser": "^2.18.0",
+		"@typescript-eslint/eslint-plugin": "^2.18.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.0.1",
+		"typescript": "^3.7.5",
+		"vscode-test": "^1.3.0"
+	}
+}

@@ -1,0 +1,95 @@
+
+<html>
+<head>
+
+
+
+    <meta charset="UTF-8">
+
+    <!--
+        Use a content security policy to only allow loading images from https or from our extension directory,
+        and only allow scripts that have a specific nonce.
+    -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <title>Case Study</title>
+</head>
+<body>
+
+
+  
+    <form action="">
+        <div class="form-group">
+          <label for="customer">Customer:</label>
+          <input type="text" class="form-control" id="customer">
+        </div>
+        <div class="form-group">
+            <label for="sector">Country:</label>
+            <input type="text" class="form-control" id="country">
+        </div>
+        <div class="form-group">
+            <label for="country">Sector:</label>
+            <select class="form-control" id="sector">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="url">Url:</label>
+            <input 
+            type="text" class="form-control" id="url">
+        </div>
+        <div class="form-group">
+            <label for="byline">Byline:</label>
+            <input 
+            type="text" class="form-control" id="byline">
+        </div>   
+        <div class="form-group">
+            <label for="challenge">Challenge:</label>
+            <textarea class="form-control" rows="5" id="challenge"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="solution">Solution:</label>
+            <textarea class="form-control" rows="5" id="solution"></textarea>
+        </div>
+        <div class="form-group row">
+            <div class="column-edge">
+                <label for="technologies">Current Technologies:</label>
+                <select class="form-control" id="technologies" size="5">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class= "column-middle">
+                
+                <button type="button" class="btn btn-default" id="but-add" disabled >&lsaquo;&lsaquo; Add</button><br>
+                <button type="button" class="btn btn-default" id="but-remove" disabled >Remove &rsaquo;&rsaquo;</button>
+            </div>  
+            <div class="column-edge">
+                <label for="technology-list">Available Technologies:</label>
+                <select class="form-control" id="technology-list" size="5">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <button type="button" class="btn btn-default" id="but-reset" disabled >Reset</button>
+        <button type="button" class="btn btn-default" id="but-save" disabled >Save</button>
+        
+        
+    </form>
+    
+    <script src='main2.js'></script>
+
+   
+</body>
+</html>
