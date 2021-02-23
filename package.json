@@ -28,27 +28,26 @@
 	"contributes": {
 		"viewsWelcome": [
 			{
-			  "view": "caseStudyExplorer",
-			  "contents": "No Case Studies Loaded.\n[Open Case Study File](command:caseStudyExplorer.loadCaseStudies)"
+				"view": "caseStudyExplorer",
+				"contents": "No Case Studies Loaded.\n[Open Case Study File](command:caseStudyExplorer.loadCaseStudies)"
 			}
-		  ],
+		],
 		"commands": [
-		
 			{
-                "command": "caseStudyExplorer.refreshEntry",
-                "title": "Refresh",
-                "icon": {
-                    "light": "resources/light/refresh.svg",
-                    "dark": "resources/dark/refresh.svg"
-                }
+				"command": "caseStudyExplorer.refreshEntry",
+				"title": "Refresh",
+				"icon": {
+					"light": "resources/light/refresh.svg",
+					"dark": "resources/dark/refresh.svg"
+				}
 			},
 			{
-                "command": "caseStudyExplorer.loadCaseStudies",
-                "title": "Open File ...",
-                "icon": {
-                    "light": "resources/light/folder.svg",
-                    "dark": "resources/dark/folder.svg"
-                }
+				"command": "caseStudyExplorer.loadCaseStudies",
+				"title": "Open File ...",
+				"icon": {
+					"light": "resources/light/folder.svg",
+					"dark": "resources/dark/folder.svg"
+				}
 			},
 			{
 				"command": "caseStudyExplorer.addEntry",
@@ -72,9 +71,7 @@
 			}
 		],
 		"menus": {
-			"commandPalette": [
-				
-			],
+			"commandPalette": [],
 			"view/title": [
 				{
 					"command": "caseStudyExplorer.refreshEntry",
@@ -84,14 +81,13 @@
 				{
 					"command": "caseStudyExplorer.addEntry",
 					"when": "view == caseStudyExplorer",
-					"group" : "navigation"
+					"group": "navigation"
 				},
 				{
 					"command": "caseStudyExplorer.loadCaseStudies",
 					"when": "view == caseStudyExplorer",
-					"group" : "navigation"
+					"group": "navigation"
 				}
-
 			],
 			"view/item/context": [
 				{
@@ -103,7 +99,6 @@
 					"command": "caseStudyExplorer.deleteEntry",
 					"when": "view == caseStudyExplorer && viewItem == casestudy"
 				}
-			
 			]
 		},
 		"viewsContainers": {
@@ -125,7 +120,6 @@
 					"contextualTitle": "Case Study Editor"
 				}
 			]
-			
 		}
 	},
 	"scripts": {
@@ -141,9 +135,9 @@
 		"@types/mocha": "^7.0.1",
 		"@types/node": "^12.11.7",
 		"@types/vscode": "^1.52.0",
-		"eslint": "^6.8.0",
-		"@typescript-eslint/parser": "^2.18.0",
 		"@typescript-eslint/eslint-plugin": "^2.18.0",
+		"@typescript-eslint/parser": "^2.18.0",
+		"eslint": "^6.8.0",
 		"glob": "^7.1.6",
 		"mocha": "^7.0.1",
 		"typescript": "^3.7.5",

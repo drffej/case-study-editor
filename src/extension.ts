@@ -9,7 +9,7 @@ import { CaseStudyEditorProvider, CaseStudy } from './caseStudyExplorer';
 export function activate(context: vscode.ExtensionContext) {
 
 	// register provider and 
-	console.log("activating ...");
+	console.log("activating Case Study Editor...");
 	var caseStudyEditorView : vscode.TreeView<CaseStudy> ;
 	const caseStudyEditorProvider = new CaseStudyEditorProvider(context);
 	//const caseStudyEditorView = vscode.window.registerTreeDataProvider('nodeDependencies', caseStudyEditorProvider);
