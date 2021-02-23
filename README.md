@@ -2,8 +2,7 @@
 
 The vscode-pandoc [Visual Studio Code](https://code.visualstudio.com/) extension lets you edit the `CaseStudies.json` file, to add, delete or change Azure Case Study information.
 
-![](https://github.com/drffej/case-study-editor/blob/master/images/casestudyeditor.png)
-
+![](https://raw.githubusercontent.com/drffej/case-study-editor/master/images/casestudyeditor.png)
 
 ## Installation
 
@@ -11,11 +10,11 @@ Download the [case-study-editor-1.0.0.vsix](https://github.com/drffej/case-study
 
 ## Usage 
 
-Click on the Case Study editor icon ![](https://github.com/drffej/case-study-editor/blob/master/media/dep.png) and load the `Case Study.json` file.
+Click on the Case Study editor icon ![](https://raw.githubusercontent.com/drffej/case-study-editor/master/media/dep.png) and load the `Case Study.json` file.
 
 Use the menu bar icons to load files, refresh, etc.  
 
-![](https://github.com/drffej/case-study-editor/blob/master/images/menubar.png)
+![](https://github.com/drffej/case-study-editor/raw/master/images/menubar.png)
 
 ## Release Notes
 
